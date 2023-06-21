@@ -1,10 +1,9 @@
-
-import openai 
+import openai
 import streamlit as st
 
 # pip install streamlit-chat  
 from streamlit_chat import message
-openai.api_key = st.secrets["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"]
+openai.api_key =["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"]
 def generate_response(prompt):
     completions = openai.Completion.create(
         engine = "text-davinci-003",
